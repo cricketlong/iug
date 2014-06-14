@@ -8,5 +8,7 @@ $(OUT):$(SRC)
 run:
 	okular $(OUT)
 
+clean:
+	-rm -f $(OUT) *.aux *.out *.nav *.log *.toc *.snm *.pdf
+
 .PNONY:clean
-	-rm -f $(OUT) *.aux *.dvi
